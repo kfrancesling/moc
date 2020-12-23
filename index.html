@@ -2,25 +2,35 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-<title>MOC</title>
+    <title>MOC</title>
 </head>
 <body>
 
 <h1>Mechanisms of care</h1>
-<div class="row"> 
-    <div class="column">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="cardimages/ace_coins.jpg" alt="Avatar" style="width: 100%;">
-              </div>
-              <div class="flip-card-back">
-                <img src="backs.jpg" alt="Avatar" style="width: 100%">
-              </div>
-            </div>
-          </div>
+<section class="body-container">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img  id="flip-card-front-image" src="cardimages/ace_coins.jpg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <img src="back.jpg" alt="Avatar" style="width: 100%">
+      </div>
     </div>
+  </div>
 
+  <button id="shuffle-button">Shuffle</button>
+
+  <div class="information-container">
+    <p id="information-text">
+      This is information text
+    </p>
+    <img src="cardimages/ace_coins.jpg" alt="Test" id="information-image">
+  </div>
+
+</section>
+
+<script src="descriptions.js"></script>
 <script src="myscripts.js"></script>
 </body>
 </html>
