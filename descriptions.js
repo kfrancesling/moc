@@ -16,19 +16,19 @@ descriptions = {
     suits: [
         {
             suit: "coins",
-            description: "fjewqiopioqf"
+            description: "c"
         },
         {
             suit: "hearts",
-            description: "fjewqiopioqf"
+            description: "h"
         },
         {
             suit: "tools",
-            description: "fjewqiopioqf"
+            description: "t"
         },
         {
             suit: "vessels",
-            description: "fjewqiopioqf"
+            description: "v"
         }
     ]
 }

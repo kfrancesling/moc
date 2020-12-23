@@ -1,5 +1,6 @@
 card_image_element = document.getElementById("flip-card-front-image")
-information_text_element = document.getElementById("information-text")
+suit_information_text_element = document.getElementById("suit-information-text")
+value_information_text_element = document.getElementById("value-information-text")
 information_image_element = document.getElementById("information-image")
 
 function card(value, suit) {
@@ -40,9 +41,14 @@ function clickHandler() {
     card_image_element.src = `cardimages/${cardValue}_${cardSuit}.jpg`
 
     information_image_element.src = `cardimages/${cardValue}_${cardSuit}.jpg`
-    information_text_element.innerHTML = descriptions.suits.find(
+    suit_information_text_element.innerHTML = descriptions.suits.find(
         obj => {
-            return obj.suit = cardSuit
+            return obj.suit == cardSuit
+        }
+    ).description
+    value_information_text_element.innerHTML = descriptions.values.find(
+        obj => {
+            return obj.value == cardValue
         }
     ).description
 
